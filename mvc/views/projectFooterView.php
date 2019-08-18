@@ -22,7 +22,8 @@
 <!-- Scripts bellow -->
 <script type="text/javascript" src="<?php echo JS_URL.'marked.js'; ?>"></script>
 
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 <script type="text/javascript" src="<?php echo JS_URL.'jquery3.1.1.js'; ?>"></script>
 <script type="text/javascript" src="<?php echo JS_URL.'script.js'; ?>"></script>
 
@@ -30,7 +31,7 @@
 <script>
   window.sr = ScrollReveal();
   // Customizing a reveal set
-  sr.reveal('.reveal', { scale: 0 , duration: 1500, origin:'top' });
+  sr.reveal('.reveal');
 </script>
 <script src="https://cdn.jsdelivr.net/highlight.js/latest/highlight.min.js"></script>
 <script>

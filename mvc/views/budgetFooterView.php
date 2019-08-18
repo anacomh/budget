@@ -22,16 +22,12 @@
 </footer>
 
 <!-- Scripts bellow -->
-<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 <script type="text/javascript" src="js/jquery3.1.1.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 
 </script>
-<script>
-  window.sr = ScrollReveal();
-  // Customizing a reveal set
-  sr.reveal('.reveal', { scale: 0 , duration: 1500, origin:'top' });
-</script>
+
 
 </body>
 </html>

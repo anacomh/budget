@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 </head>
 <body>
-
 <!-- header beggining   -->
 <header class="main-header">
   <div class="container">
