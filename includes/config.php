@@ -2,13 +2,13 @@
 
 
     //Database config
-    define('DB_HOST','localhost');
-    define('DB_USER','root');
-    define('DB_PASS','root');
-    define('DB_NAME','budget1');
+    define('DB_HOST','45.55.154.181');
+    define('DB_USER','yckvwbhrfb');
+    define('DB_PASS','My86MAwqYb');
+    define('DB_NAME','yckvwbhrfb');
 
     //URL config Front
-    define('BASE_URL', 'http://localhost:8888/budget/');
+    define('BASE_URL', 'http://budget.adentro.co/');
     define('CSS_URL', BASE_URL.'static/css/');
     define('JS_URL', BASE_URL.'static/js/');
     define('IMG_URL', BASE_URL.'static/img/');

@@ -4,7 +4,7 @@
 
       public function index(){
         //load Model
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
 
         //Savedata to view, execute function described on Model
         $this->saveData('proposals', $proposal_model->getProposals() );
@@ -16,7 +16,7 @@
 
       public function detail(){
         //Load proposal model
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
 
         //Send data to view
         $this->saveData('proposal', $proposal_model->getDetail($this->id) );
@@ -35,7 +35,7 @@
       }
 
       public function visibility(){
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
 
         if (!empty($_POST['prop_visibility'])) $prop_visibility=1; else {
           $prop_visibility=0;
@@ -49,7 +49,7 @@
       }
 
       public function payment(){
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
 
         if (!empty($_POST['prop_pay'])) $prop_pay=1; else {
           $prop_pay=0;
@@ -65,7 +65,7 @@
 
       public function update(){
         //Load proposal model
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
 
         $prop_visibility = 0;
         if(isset($_POST['prop-visibility'])){
@@ -95,7 +95,7 @@
       public function create(){
 
         //Load proposal model
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
         //Create new book in DB
         $new_id = $proposal_model->create();
         //Redirect to detail page
@@ -104,7 +104,7 @@
 
       public function trash(){
         //Load books model
-        $proposal_model = $this->loadModel('Proposal');
+        $proposal_model = $this->loadModel('proposal');
         //update database
         $proposal_model->trash( $this->id );
         //Redirect

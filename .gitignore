@@ -1,2 +1,4 @@
 # Ignore the following files
-.config.php
+config.php
+config_backup.php
+.DS_Store
