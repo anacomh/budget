@@ -12,7 +12,7 @@ class ProjectController extends BaseController {
   public function detail(){
 
     //Load proposal model
-    $project_model= $this->loadModel('project');
+    $project_model= $this->loadModel('Project');
 
     // Receive client id to be able to do the getMainDetails query on Model
     $client = $project_model->getClientId($this->id);

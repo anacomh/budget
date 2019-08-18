@@ -4,7 +4,7 @@
 
       public function index(){
         //load Model
-        $proposal_model = $this->loadModel('proposal');
+        $proposal_model = $this->loadModel('Proposal');
 
         //Savedata to view, execute function described on Model
         $this->saveData('proposals', $proposal_model->getProposals() );

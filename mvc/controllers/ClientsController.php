@@ -4,7 +4,7 @@
 
       public function index(){
         //load Model
-        $clients_model = $this->loadModel('clients');
+        $clients_model = $this->loadModel('Clients');
 
         //Savedata to view, execute function described on Model
         $this->saveData('clients', $clients_model->getClients() );
@@ -16,7 +16,7 @@
 
       public function detail(){
         //load Model
-        $clients_model = $this->loadModel('clients');
+        $clients_model = $this->loadModel('Clients');
         //Send data to view
         $this->saveData( 'client' , $clients_model->getClient($this->id) );
         //load View
@@ -25,7 +25,7 @@
 
       public function update(){
         //Load books model
-        $clients_model = $this->loadModel('clients');
+        $clients_model = $this->loadModel('Clients');
 
         //Update database
         $clients_model->update($this->id,
@@ -41,7 +41,7 @@
       public function create(){
 
         //Load proposal model
-        $clients_model = $this->loadModel('clients');
+        $clients_model = $this->loadModel('Clients');
         //Create new book in DB
         $new_id = $clients_model->create();
         //Redirect to detail page
@@ -50,7 +50,7 @@
 
       public function trash(){
         //Load books model
-        $clients_model = $this->loadModel('clients');
+        $clients_model = $this->loadModel('Clients');
         //update database
         $clients_model->trash( $this->id );
         //Redirect
