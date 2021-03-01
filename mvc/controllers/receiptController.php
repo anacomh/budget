@@ -19,7 +19,7 @@
 
       public function detail(){
         //load Model
-        $receipt_model = $this->loadModel('Receipt');
+        $receipt_model = $this->loadModel('receipt');
 
         // $this->title('Olá');
 
